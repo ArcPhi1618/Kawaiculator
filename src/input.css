@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.btn {
+    @apply h-12 border-2 border-[#c8b6ff] rounded-sm
+           flex items-center justify-center
+           text-lg font-medium text-purple-500
+           hover:bg-[#e7c6ff]
+           active:scale-95
+           transition;
+}

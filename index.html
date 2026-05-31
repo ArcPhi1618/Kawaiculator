@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center min-h-screen bg-[#ffd6ff]">
+
+    <div class="w-80 p-4 flex flex-col gap-3 border-2 border-[#c8b6ff] shadow-lg">
+
+        <!-- Display -->
+        <div id="display"
+             class="h-16 flex items-center justify-end px-4 text-3xl font-semibold border-2 rounded-lg border-[#c8b6ff] text-purple-500 overflow-hidden">
+            0
+        </div>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 gap-2">
+
+            <button class="btn" data-value="c">C</button>
+            <button class="btn" data-value="⌫">⌫</button>
+            <button class="btn" data-value="%">%</button>
+            <button class="btn" data-value="/">÷</button>
+
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn" data-value="*">×</button>
+
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn" data-value="-">−</button>
+
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn" data-value="+">+</button>
+
+            <button class="btn" data-value="±">±</button>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn" data-value="=">=</button>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="calc.js"></script>
+
+</html>
